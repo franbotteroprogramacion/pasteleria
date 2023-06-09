@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Imagenes/icono.png">
+    <title>Mi Pastelería</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        @media (max-width:999px){
+            .imagen_graciela{
+                width: 50%;
+            }
+            .cabecera{
+                height: 75px;
+            }
+            .logo{
+                width: 90px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script src="./function.js"></script>
+    <header class="cabecera container-fluid">        
+        <div class="header-content row">
+            <div class="col-2">
+                <img class="logo" src="Imagenes/icono.png" >
+            </div>
+
+            <div class="col-10">
+                <h1 class=" titulo">Bienvenidos a la Pastelería de Lulú</h1>
+            </div>
+
+            <div class="bottom-header col-6">
+                <div>
+                    <button class="buttom-header" onclick="inicio()">Inicio</button>
+                </div>
+                <div class="dropdown">
+                    <button class="buttom-header">Productos</button>
+                        <div class="dropdown-content">
+                            <a onclick="Tortas()"><strong>Tortas</strong></a>
+                            <a onclick="Tartas()"><strong>Tartas</strong></a>
+                            <a onclick="Budines()"><strong>Budines</strong></a>
+                            <a onclick="Delicatessen()"><strong>Delicatessen</strong></a>
+                            <a onclick="Especialidades()"><strong>Especialidades</strong></a>
+                        </div>
+                </div>
+            </div>  
+        </div> 
+    </header>
+    <div class="content_sobremi">
+        <div class="sobre_mi">
+            Desde muy joven me sentí atraída por la repostería, viendo a mi abuela cocinar y leyendo recetas de sus apuntes, siempre buscaba la forma de saber mas. Así, un día al ver una publicidad de una academia de pasteleros, me tentó la posibilidad de hacer el curso de pastelería básica, yendo mas adelante por más, llegando a Pastelería profesional, pensando en poder ampliar mis conocimientos y técnicas para un producto sublime. Y así surge la idea de tener un microemprendimiento hogareño y casero rentable, ofreciendo productos de pastelería artesanal de excelente calidad para todo el público y ocación.
+        </div>
+
+        <div class="img-mami">
+            <img class="imagen_graciela" src="Imagenes/mami.jpeg">
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>

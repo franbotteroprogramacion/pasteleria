@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.cabecera{
+    height: 180px;
+    position: fixed;
+    background: rgb(231, 101, 248); 
+    border-width: 10px;
+    border-style: dashed dashed dashed dashed;
+    border-color: #f6b1ee;
+    display: inline-block;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+}
+.header-content{
+    display: flex;
+}
+.logo {
+    width: 180px;
+    max-width: 180px;
+    min-width: 50px;
+}
+
+.bottom-header{ /*div contenedor de los botones*/
+    display: flex;
+    gap: 25px;
+    padding-top: 0px;
+    padding-right: 0px;
+    height: 170px;
+    position: relative;
+    justify-content: right ;
+    width: 660px;
+    right: 0px;
+    top: -50px;
+    left: 695px;
+}
+
+.dropdown{
+    display: inline-block;
+    position: relative;    
+    height: 50px;
+}
+
+.buttom-header{
+    background:#f6b1ee;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    width: 200px;
+    display: inline-block;
+    justify-content: end;
+}
+
+.dropdown-content {
+    display: none;
+    background: #b062b8;
+    position: absolute;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    width: 100%;
+    min-width: 200px;
+    overflow: auto;
+    box-shadow: 30px 50px 100px 20px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 25px;
+}
+.dropdown-content a:hover {
+    color: #b062b8;
+    background-color: #f6b1ee;
+    border-width: 4px;
+    border-style: dashed;
+    border-color: #000000;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: rgb(0, 0, 0);
+	background: #f6b1ee; 
+	font-size: 40px;
+	line-height: 50px;
+	padding-top: 80px;
+    background: -webkit-radial-gradient(rgb(231, 101, 248), rgb(139, 21, 207));
+    position: relative;
+    
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    font-family:  "Caveat";
+    font-style: oblique;
+}
+
+.sobre_mi{
+    left: 75px;
+    font-size: 30px;
+    line-height : 35px;
+    width: 600px;
+    position: relative;
+
+}
+.content_sobremi{
+    margin-top: 170px;
+    margin-right: 100px;
+}
+
+.imagen_graciela{
+    width: 350px;
+    max-width: 350px;
+    min-width: 50px;
+    position: relative;
+    z-index: 1;
+    float: right;
+    top: -525px;
+    right: 75px;
+    display: flex;
+    border-radius: 900px;
+}
